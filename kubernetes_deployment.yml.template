@@ -5,7 +5,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: quickstart-se
+  name: quickstart-se03
   labels:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       labels:
-        app: quickstart-se
+        app: quickstart-se03
         commit: ${WERCKER_GIT_COMMIT}
     spec:
       containers:
