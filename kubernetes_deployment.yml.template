@@ -12,7 +12,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quickstart-se
+      app: quickstart-se03
   template:
     metadata:
       labels:
@@ -20,10 +20,10 @@ spec:
         commit: ${WERCKER_GIT_COMMIT}
     spec:
       containers:
-      - name: quickstart-se
+      - name: quickstart-se03
         image: ${OCIR_REPO}:${WERCKER_GIT_COMMIT}
         ports:
-        - name: quickstart-se
+        - name: quickstart-se03
           containerPort: 8090
           protocol: TCP
       imagePullSecrets:
